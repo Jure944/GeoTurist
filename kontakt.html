@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="hr">
+  <head>
+    <meta charset="utf-8">
+	<meta name="description" content="">
+	<meta name="author" content="Jure">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Kontakt-GeoTurist</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet"> 
+	<link href="style.css" rel="stylesheet">
+  </head>
+  <body>
+	<div class="grid page-container">
+		<header class="page-header">
+			<nav class="site-navigation">
+				<div class="btn">
+                    &#8801;
+				</div>	
+				<ul>
+					<li><a href="index.html">Naslovnica</a></li>
+					<li><a href="onama.html">O nama</a></li>
+					<li><a href="eko-turizam.html">Eko turizam</a></li>
+					<li><a href="kontakt.html">Kontakt</a></li>
+				</ul>
+			</nav>
+			<!-- .site-navigation end -->
+			<h1 class="site-title">GeoTurist</h1>
+		</header>
+		<!-- .page-header end -->
+		<main class="primary">
+			<h2>Imate li pitanja? Kontaktirajte nas.</h2>
+			<div class="container">
+				<div class="form">
+					<div class="contact-info">
+						<h3>Kontaktirajte nas</h3>
+						<p class="text">
+							Za bilo kakva pitanja u vezi aranžmana i cijena, obratite nam se s povjerenjem.
+						</p>
+					</div>
+		
+					<div class="contact-form">
+						<span class="circle one"></span>
+						<span class="circle two"></span>
+
+					<form action="kontakt.html">
+						<div class="input-container">
+							<input type="text" name="name" class="input">
+							<label for="Username">Ime i Prezime</label>
+							<span>Ime i Prezime</span>
+						</div>
+						<div class="input-container">
+							<input type="email" name="email" class="input">
+							<label for="Email">Email</label>
+							<span>Email</span>
+						</div>
+						<div class="input-container">
+							<input type="tel" name="phone" class="input">
+							<label for="Telefon">Telefon</label>
+							<span>Telefon</span>
+						</div>
+						<div class="input-container textarea">
+							<textarea name="message" class="input"></textarea>
+							<label for="Poruka">Poruka</label>
+							<span>Vaša poruka</span>
+						</div>
+						<button class="button">Slanje</button>
+						
+					</form>		
+					</div>
+				</div>
+			</div>
+			<!-- .page-content -->
+		</main>
+		<!-- .primary end -->
+		<aside class="secondary">
+			<div class="grid content-columns">
+				<ul>
+					<li><a href="index.html">Naslovnica</a></li>
+					<li><a href="eko-turizam.html">Eko turizam</a></li>
+					<li><a href="onama.html">O nama</a></li>
+					<li><a href="kontakt.html">Kontakt</a></li>
+				
+				</ul>
+				<ul>
+					<li><a href="#">Italija</a></li>
+					<li><a href="#">Provansa</a></li>
+					<li><a href="#">Toskana</a></li>
+					<li><a href="#">Grčka</a></li>
+					
+				</ul>
+				<ul>
+					<li><a href="#">Europska putovanja</a></li>
+					<li><a href="#">Izleti</a></li>
+					<li><a href="#">Azija</a></li>
+					<li><a href="#">Južna Amerika</a></li>
+					
+				</ul>
+							
+			</div>
+			<!-- .content-columns end -->
+		</aside>
+		<!-- .secondary end -->
+		<footer class="page-footer">
+			<p>GeoTurist &copy; 2022.</p>
+		</footer>
+		<!-- .page-footer end -->
+	</div>
+	<script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-1.9.0.js"></script>
+    <script>
+        $('.btn').click(function(){
+            $('.site-navigation ul').slideToggle();
+        });
+    </script>
+	<script src="app.js"></script>
+  </body>
+</html>

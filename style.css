@@ -1,0 +1,316 @@
+/* CSS */
+
+*{
+	box-sizing:border-box;
+}
+
+body{
+	background-color:#EEEEEE;
+	color:#333333;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	text-align: center;
+	margin: 0;
+}
+
+a{
+	color:#333333;
+	text-decoration: none;
+}
+
+a:visited{
+	color:#666666;}
+a:hover{
+	color:goldenrod;}
+a:hover{
+	transition: 0.3s;
+}
+
+h1,h2,h3,h4,h5,h6,.nav-btn{
+	font-family: Verdana, Geneva, Tahoma, sans-serif;}
+
+img{
+	max-width: 100%;
+	height: auto;
+	border-radius: 15px;
+}
+
+/* LAYOUT *********************************************************** */
+.grid{
+	display: grid;
+	grid-gap: 20px;
+}
+
+.page-container{
+	height:100vh;
+	grid-template-rows: auto 1fr auto auto;
+	grid-template-columns: 1fr minmax(280px,1200px) 1fr;
+}
+
+.page-header,.page-footer{
+	grid-column: 1/4;
+}
+
+.primary,.secondary{
+	grid-column: 2/3;
+}
+
+
+
+.page-header{
+	background-image: url(slike/travel.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+}
+
+.site-navigation,.post,.page-footer{
+	padding: 10px;
+}
+
+.site-navigation{
+	background-color:rgba(238,238,238,0.65);
+}
+
+.site-navigation ul,.secondary ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.site-navigation ul{
+	display: grid;
+	grid-gap: 1.8em;
+	grid-template-columns: repeat(auto-fit,minmax(150px,max-content));
+	justify-content: center;
+}
+
+.btn{
+	font-size: 2.8em;
+	display: none;
+	
+}
+
+.site-title{
+	color:#FFFFFF;
+	font-size: 5.3333vw;
+	font-family: 'Righteous', cursive;
+}
+
+
+
+.content-columns{
+	grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+}
+
+.page-title{
+	grid-column: 1/-1;
+}
+
+.post,.page-footer{
+	background-color:rgba(255,255,255,0.65);
+}
+
+.post{
+	font-family: 'Righteous', cursive;
+	border-radius: 10px;
+	margin-top: 30px;
+}
+
+.secondary ul{
+	line-height: 200%;
+}
+
+.banner{
+	background-image: url(slike/compass.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	padding: 20px;
+	height: 700px;
+	color:white;
+	font-size: 1.3em;
+	align-content: center;
+	border-radius: 20px;
+}
+
+.post p, .page-content p{
+	text-align: left;
+}	
+
+.container{
+	position: relative;
+	width: 100%;
+	min-height: 100vh;
+	padding: 1em;
+	background-color: #fafafa;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.form{
+	width: 100%;
+	max-width: 820px;
+	
+	background-color: #fff;
+	border-radius: 10px;
+	box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1);
+	z-index: 1000;
+	overflow: hidden;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+}
+
+.contact-form{
+	background-color: #1abc9c;
+	position: relative;
+}
+
+.circle{
+	border-radius: 50%;
+	background: linear-gradient(135deg, transparent 20%, #149279);
+	position: absolute;
+}
+
+.circle.one{
+	width: 130px;
+	height: 130px;
+	top: 130px;
+	right: -40px;
+}
+
+.circle.two{
+	width: 80px;
+	height: 80px;
+	top: 10px;
+	right: 30px;
+}
+
+.contact-form::before{
+	content: "";
+	position: absolute;
+	width: 26px;
+	height: 26px;
+	background-color: #1abc9c;
+	transform: rotate(45deg);
+	top: 50px;
+	left: -13px;
+}
+
+form{
+	padding: 2em 1.9em;
+	z-index: 10;
+	overflow: hidden;
+	position: relative;
+}
+
+
+
+.input-container{
+	position: relative;
+	margin: 1em 0;
+}
+
+
+
+.input{
+	width: 100%;
+	outline: none;
+	border: 2px solid #fafafa;
+	background: none;
+	padding: 0.8em 1.3em;
+	color: #fff;
+	font-weight: 500;
+	font-size: 1em;
+	letter-spacing: 0.5px;
+	border-radius: 25px;
+	transition: 0.3s;
+}
+
+textarea.input{
+	padding: 0.8em 1em;
+	min-height: 150px;
+	border-radius: 22px;
+	resize: none;
+	overflow-y: auto;
+}
+
+.button{
+	padding: 0.4em;
+	background-color: #fff;
+	border: 2px solid #fafafa;
+	font-size: 1em;
+	color: #1abc9c;
+	line-height: 1;
+	border-radius: 25px;
+	outline: none;
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+.button:hover{
+	background-color: transparent;
+	color: #fff;
+}
+
+label{
+	display: none;
+}
+
+span{
+	color: #fafafa;
+}
+
+section ul li{
+	text-align: left;
+	margin-left: 3em;
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* MEDIA QUERIES ******************************************** */
+
+/* rješenje problema za ne pojavljivanje izbornika (nakon korištenja) na uređajima iznad 768px širine */
+
+@media (min-width: 800px){
+	.site-navigation ul{display:grid !important;
+	}
+	.site-navigation{
+		font-size: 2.2em;
+	}
+	
+	
+}
+
+
+@media (max-width:768px){
+	.site-navigation ul{grid-template-columns:repeat(1,1fr);
+	display: none;
+    }
+	
+	.site-navigation li{padding:10px;
+	}
+	
+	.btn{display: block;
+	}
+
+	.site-title{
+		font-size: 2em;
+	}
+	
+}
+
